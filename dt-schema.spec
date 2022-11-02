@@ -9,6 +9,7 @@ Group: Development/Tools
 BuildArch: noarch
 BuildRequires: python
 BuildRequires: python%{pyver}dist(setuptools)
+BuildRequires: python%{pyver}dist(pip)
 
 %description
 Tools for validating DeviceTree files
