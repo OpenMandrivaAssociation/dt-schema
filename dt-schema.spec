@@ -1,5 +1,5 @@
 Name: dt-schema
-Version: 2022.08.1
+Version: 2022.12
 Release: 1
 Source0: https://github.com/devicetree-org/dt-schema/archive/refs/tags/v%{version}.tar.gz
 Summary: Tools for validating DeviceTree files
