@@ -1,7 +1,7 @@
 Name: dt-schema
-Version: 2022.12
+Version: 2023.01
 Release: 1
-Source0: https://github.com/devicetree-org/dt-schema/archive/refs/tags/v%{version}.tar.gz
+Source0: https://github.com/devicetree-org/dt-schema/archive/refs/tags/%{name}-%{version}.tar.gz
 Summary: Tools for validating DeviceTree files
 URL: https://github.com/devicetree-org/dt-schema
 License: BSD
@@ -19,20 +19,12 @@ Tools for validating DeviceTree files
 %prep
 %autosetup -p1
 
-# Trick setuptools-scm into accepting the tarball
-git init
-git config user.name "OpenMandriva Builder"
-git config user.email builder@openmandriva.org
-git add .
-git commit -m "Import"
-git tag %{version}
-
-echo "__version__='%{version}'" >dtschema/version.py
-
 %build
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 %py_build
 
 %install
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 %py_install
 
 %files
