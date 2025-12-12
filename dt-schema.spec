@@ -1,6 +1,6 @@
 Name: dt-schema
 Version: 2023.01
-Release: 2
+Release: 3
 Source0: https://github.com/devicetree-org/dt-schema/archive/refs/tags/%{name}-%{version}.tar.gz
 Summary: Tools for validating DeviceTree files
 URL: https://github.com/devicetree-org/dt-schema
