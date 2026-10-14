@@ -1,13 +1,13 @@
 Name: dt-schema
 Version: 2023.01
-Release: 3
+Release: 4
 Source0: https://github.com/devicetree-org/dt-schema/archive/refs/tags/%{name}-%{version}.tar.gz
 Summary: Tools for validating DeviceTree files
 URL: https://github.com/devicetree-org/dt-schema
 License: BSD
 Group: Development/Tools
 BuildArch: noarch
-BuildRequires: python
+BuildRequires: pkgconfig(python3)
 BuildRequires: python%{pyver}dist(setuptools)
 BuildRequires: python%{pyver}dist(setuptools-scm)
 BuildRequires: python%{pyver}dist(pip)
